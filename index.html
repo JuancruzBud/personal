@@ -31,10 +31,35 @@
       <li class="indice-item"><span data-tooltip="contact"></span><a href="#contact"></a></li>
     </ul>
 
+    <div id="mySidenav" class="side-nav">
+      <div>
+        <p>Menu</p>
+        <ul class="side-ul">
+          <li class="side-nav-item"><a class="active" href="#Home">Home</a></li>
+          <li class="side-nav-item"><a href="#about">About</a></li>
+          <li class="side-nav-item"><a href="#whatido">What i do</a></li>
+          <li class="side-nav-item"><a href="#projects">Projects</a></li>
+          <li class="side-nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <span>hello@juancbud.com</span>
+        <span>+11 358 6 023 603</span>
+        <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-dribbble fa-2x" aria-hidden="true"></i></a>
+
+      </div>
+    </div>
+    <header>
+      <div onclick="openNav()" class="hamburger-menu">
+         <div class="bar"></div>
+      </div>
+    </header>
     <div class="contenedor">
       <div id="home">
         <div class="header">
-          <div class="logo"></div>
+          <div id="logo" class="logo"></div>
           <ul class="nav-bar">
             <li class="nav-item"><a class="active" href="#Home">Home</a></li>
             <li class="nav-item"><a href="#about">About</a></li>
@@ -47,17 +72,19 @@
           <h1><span class="h1-bold">Hi there.</span></br>I'm Juan Cruz.</br>Industrial design &amp</br>Web development.</h1>
           <p id="p-studient">(student)</p>
         </div>
-        <div class="scroll"  data-tooltip="scroll down"></div>
+        <div class="mouse-wrapper"  data-tooltip="scroll down">
+            <div class="mouse-scroll"></div>
+        </div>
       </div>
     </div>
     <div id="about">
       <div class="about-textbox">
         <div class="textbox">
           <h2>About me</h2>
-          <h4>I’m a 23 years old boy from Argentina. Student of</br>
-          industrial design in <a href="#">National University of Córdoba.</a></br>
-          Also i’m a self-taught Web Designer/Developer.</br>
-          Consider my self an multidisciplinary designer,</br>
+          <h4>I’m a 23 years old boy from Argentina. Student of
+          industrial design in <a href="#">National University of Córdoba.</a>
+          Also i’m a self-taught Web Designer/Developer.
+          Consider my self an multidisciplinary designer,
           i love create and learn new thing all the time.</h4>
           <a href="#contact" class="btn"><i class="fa fa-envelope" aria-hidden="true"></i>  Contact Me</a>
           <a href="https://www.linkedin.com/in/jcruzbudin/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
@@ -76,7 +103,7 @@
           <h3>Industrial Design</h3>
           <p>Lorem ipsum dolor sit amet inore, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
         </div>
-        <div class="skill-box center">
+        <div class="skill-box">
           <div class="skill"></div>
           <h3>UI/UX Design</h3>
           <p>Lorem ipsum dolor sit amet inore, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
@@ -94,7 +121,7 @@
       <div class="project">
         <div class="project-img-box"></div>
         <div class="project-info-box">
-          <div class="project-info">
+          <div class="project-info a">
             <h5>Project One</h5>
             <p class="tag"><i class="fa fa-tag" aria-hidden="true"></i> ui design</p>
             <p>Lorem ipsum dolor sit amet inore, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
@@ -115,7 +142,23 @@
       </div>
     </div>
     <div id="contact">
-      <div class="contenedor contact-box">
+      <div class="contact-box">
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3213.5016722183655!2d-64.18156839597451!3d-31.425520202178333!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1497986260349"  frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="contact-textbox">
+          <div class="textbox">
+            <h2>Get in touch</h2>
+            <h4>I'm always looking forward to new opportunities,</br>
+              ping me if you got any.</h4>
+            <div class="icon-box"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></div><a href="mailto:hello@juanbud.com">hello@juanbud.com</a></br>
+            <div class="icon-box"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></div><a href="#">+11 358 6 023 603</a></br>
+            <div class="icon-box"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></div><a href="#">San Lorenzo 427, Neva Cba. </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="contenedor contact-box">
         <h2>Get in touch</h2>
         <h4>I'm always looking forward to new opportunities,</br>
           ping me if you got any.</h4>
@@ -124,7 +167,7 @@
           <p>or</p>
           <i class="fa fa-phone fa-2x" aria-hidden="true"></i><a href="#">+11 358 6 023 603</a>
         </div>
-      </div>
+      </div> -->
       <div id="social">
         <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
