@@ -607,11 +607,10 @@ margin: 0;
   width: calc(50% - (50% - 585px));
   margin-right: calc(50% - 585px);
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
-.textbox {
+#contact .textbox {
   max-width: 480px;
 }
 #about h2 {
@@ -717,6 +716,7 @@ footer a:hover {
     width: calc(50% - 10px);
     margin: 0 10px;
   }
+  /*Projects*/
 }
 
 @media screen and (max-width: 1024px) {
@@ -744,6 +744,14 @@ footer a:hover {
   }
   .hamburger-menu {
     display: inline-block;
+  }
+}
+@media screen and (max-width: 870px) {
+  #projects .project-img-box {
+    height: 420px;
+  }
+  #projects .project-info-box {
+    height: 420px;
   }
 }
 @media screen and (max-width: 844px) {
@@ -800,4 +808,18 @@ footer a:hover {
     text-align: center;
     margin-bottom:  0;
   }
+}
+@media screen and (max-width: 668px) {
+  #projects .project-img-box {
+    width: 70%;
+   }
+   #projects .project-info-box {
+     width: 30%;
+     align-items: flex-start;
+    }
+    #projects p {
+      display: none;
+     }
+     #projects h5 {
+      margin-bottom: 40px;
 }
