@@ -401,10 +401,13 @@ li.nav-item a.active {
   flex-direction: column;
   justify-content: space-between;
 }
-h1 span {
+#home h1 {
+  margin-top: 0;
+}
+#home h1 span {
   font-weight: 700;
 }
-p#p-studient {
+p.p-student {
   font-family: 'Work Sans', sans-serif;
   font-size: 32px;
   font-weight: 500;
@@ -413,9 +416,9 @@ p#p-studient {
 }
 /*Mouse animation*/
 .mouse-wrapper {
-  margin: 0 auto 50px auto;
-  height: 48px;
-  width: 30px;
+  margin: 0 auto 30px auto;
+  height: 50px;
+  width: 31px;
   border: 2px solid #2C2C2C;
   border-radius: 18px;
 }
@@ -455,7 +458,7 @@ p#p-studient {
   justify-content: center;
 }
 .textbox {
-  max-width: 480px;
+  max-width: 490px;
 }
 .about-photo {
   width: 50%;
@@ -475,7 +478,10 @@ p#p-studient {
   margin: 0;
 }
 #about h4 {
-margin-top: 40px;
+  margin-top: 40px;
+}
+#about h4 span {
+  font-weight: 500;
 }
 #about i.fa-linkedin,#about .fa-twitter {
   color: #00AEEF;
@@ -821,5 +827,57 @@ footer a:hover {
       display: none;
      }
      #projects h5 {
+      font-size: 36px;
       margin-bottom: 40px;
+}
+@media screen and (max-width: 610px) {
+  #home h1 {
+    font-size: 52px;
+  }
+  #home p.p-student {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 561px) {
+  .project {
+    flex-direction: column;
+  }
+  #projects .project-img-box {
+    width: 100%;
+    order: -1;
+    margin-bottom: 10px;
+  }
+  #projects .project-info-box {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+  }
+  #projects .a {
+    margin-left: 0;
+}
+  #projects p {
+    display: none;
+  }
+ #projects h5 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  #social i {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 376px) {
+  #home h1 {
+    font-size: 36px;
+  }
+  #home p.p-student {
+    font-size: 21px;
+  }
+
+  #contact .textbox a{
+    font-size: 21px;
+  }
+  #scroll-to-top-btn {
+    display: none;
+  }
 }
