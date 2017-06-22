@@ -225,7 +225,7 @@ li.indice-item a.active-bullet:hover {
   display: none;
   float: right;
   width: 20px;
-  height: 12px;
+  height: 22px;
   cursor: pointer;
   margin-right: 10px;
 }
@@ -250,7 +250,7 @@ li.indice-item a.active-bullet:hover {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 5px;
+  bottom: 7px;
   background: #95989A;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
   transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -259,7 +259,7 @@ li.indice-item a.active-bullet:hover {
   content: "";
   position: absolute;
   left: 0;
-  top: 5px;
+  top: 7px;
   background: #95989A;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
   transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
