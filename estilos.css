@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F9F9F9;
-  transition: background-color 400ms ease-in-out;
+    transition: background-color 400ms ease-in-out;
 }
 .contenedor {
   max-width: 1170px;
@@ -515,7 +515,9 @@ margin-top: 40px;
   box-shadow: 0 6px 32px rgba(0, 0, 0, .2);
 }
 .skill-box p {
-  margin: 50px 40px;
+  margin: 50px auto;
+  padding: 0 10px;
+  max-width: 290px;
 }
 .skill {
   width: 90px;
@@ -744,9 +746,58 @@ footer a:hover {
     display: inline-block;
   }
 }
-
 @media screen and (max-width: 844px) {
   #projects .a {
     margin-left: 10px;
+  }
+}
+@media screen and (max-width: 769px) {
+/*About*/
+  #about {
+    display: inline-grid;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .about-textbox {
+    order: 1;
+    width: auto;
+  }
+  .textbox {
+    margin: 0 auto 30px;
+  }
+  #about h2 {
+    margin-top: 50px;
+  }
+  .about-photo {
+    height: 440px;
+    width: 100%
+  }
+
+/*What i do*/
+  .skill-big-box {
+    flex-direction: column;
+  }
+  .skill-box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .skill-box:nth-child(2) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .skill-box p {
+    max-width: 470px;
+  }
+/*Contact*/
+  #map {
+    display: none;
+  }
+  .contact-textbox {
+  width: 100%;
+  margin: auto;
+  }
+  #contact .textbox {
+    text-align: center;
+    margin-bottom:  0;
   }
 }

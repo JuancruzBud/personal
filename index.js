@@ -9,7 +9,8 @@
 function openNav() {
     document.getElementById("mySidenav").style.transform = "translateX(0px)";
 		document.getElementById("logo").style.marginLeft = "300px";
-    // document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
+		document.body.style.overflow = "hidden";
+		// document.body.style.backgroundColor = "rgba(0,0,0,0.6)";
 }
 
 /* Set the width of the side navigation to 0 */
