@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F9F9F9;
-    transition: background-color 400ms ease-in-out;
+  transition: background-color 400ms ease-in-out;
 }
 .contenedor {
   max-width: 1170px;
@@ -108,6 +108,9 @@ i.fa-arrow-right {
   /*Contenedor*/
   border: 1px solid #008CC0;
   background-color: #008CC0;
+}
+.fa-1mx {
+  font-size: 1.5em;
 }
 i.fa-linkedin,
 .fa-twitter,
@@ -227,7 +230,7 @@ li.indice-item a.active-bullet:hover {
   width: 20px;
   height: 22px;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .bar,
 .bar:after,
@@ -277,7 +280,7 @@ li.indice-item a.active-bullet:hover {
   transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 /* Side Nav*/
-.side-nav {
+#side-nav {
   z-index: 4;
   position: fixed;
   height: 100vh;
@@ -290,6 +293,9 @@ li.indice-item a.active-bullet:hover {
   justify-content: space-between;
   transform: translateX(-300px);
   transition: transform 400ms ease-in-out;
+}
+.toggleNav {
+  transform: translateX(0)!important;
 
 }
 ul.side-ul {
@@ -297,7 +303,7 @@ ul.side-ul {
   margin: 0px;
   list-style-type:none;
 }
-.side-nav p {
+#side-nav p {
   margin-left: 20px;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -324,7 +330,7 @@ li.side-nav-item:hover {
 li.side-nav-item a {
   color: #F9F9F9;
 }
-.side-nav span {
+#side-nav span {
   display: block;
   margin: 0 0 10px 20px;
   font-family: 'Open Sans', sans-serif;
@@ -332,10 +338,10 @@ li.side-nav-item a {
   font-weight: 500;
   color: #F9F9F9;
 }
-.side-nav span:last-child {
+#side-nav span:last-child {
   margin-bottom: 20px;
 }
-.side-nav i {
+#side-nav i {
   margin: 0 0 20px 20px;
   color: #F9F9F9;
 }
@@ -458,7 +464,7 @@ p.p-student {
   justify-content: center;
 }
 .textbox {
-  max-width: 490px;
+  max-width: 487px;
 }
 .about-photo {
   width: 50%;
@@ -597,9 +603,9 @@ margin: 0;
   display: flex;
 }
 #map {
-  width: calc(50% - 10px);
+  width: calc(50% - 20px);
   min-height: 100%;
-  margin: 10px 0 10px 10px;
+  margin: 20px 0 20px 20px;
   display: inline-block;
   opacity: 1;
   transition: opacity 200ms ease-in-out;
@@ -709,18 +715,18 @@ footer a:hover {
 }
 
 /*Responsive*/
-@media screen and (max-width: 1205px){
+@media screen and (max-width: 1225px){
   .contenedor {
-    margin: 0 10px;
+    margin: 0 20px;
   }
   /*About*/
   .about-textbox {
-    width: calc(50% - 10px);
-    margin: 0 10px;
+    width: calc(50% - 40px);
+    margin: 0 20px;
   }
   .contact-textbox {
-    width: calc(50% - 10px);
-    margin: 0 10px;
+    width: calc(50% - 40px);
+    margin: 0 20px;
   }
   /*Projects*/
 }
@@ -732,20 +738,11 @@ footer a:hover {
   ul.nav-bar {
     display: none;
   }
-  header {
-  z-index: 3;
-    position: fixed;
-    width: 100%;
-    background-color: white;
-    height: 60px;
-    box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
-  }
+
   .logo {
     width: 36px;
     height: 42.5px;
-    margin-top: 10px;
-    margin-top: 10px;
-    position: fixed;
+    margin-top: 20px;
     z-index: 3;
   }
   .hamburger-menu {
