@@ -16,3 +16,15 @@ $('.hamburger-menu').on ('click', function() {
 	}
 })
 })();
+
+
+// Cuando hago Click en un a del Side Menu, se cierra
+$('.side-nav-item a').on ('click', function() {
+	$('#side-nav').toggleClass('toggleNav');
+	$('.bar').toggleClass('animate');
+	if ($('body').css('overflow') == 'visible'){
+		$('body').css('overflow','hidden')
+	} else {
+		($('body').css('overflow','visible'))
+	}
+})();
