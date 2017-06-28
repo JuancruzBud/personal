@@ -27,4 +27,4 @@ $('.side-nav-item a').on ('click', function() {
 	} else {
 		($('body').css('overflow','visible'))
 	}
-})();
+});

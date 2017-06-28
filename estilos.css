@@ -224,13 +224,12 @@ li.indice-item a.active-bullet:hover {
 }
 /*Hamburger btn*/
 .hamburger-menu {
-  margin-top: 20px;
+  margin-top: 28px;
   display: none;
   float: right;
   width: 20px;
   height: 22px;
   cursor: pointer;
-  margin-right: 20px;
 }
 .bar,
 .bar:after,
