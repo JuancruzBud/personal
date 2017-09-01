@@ -22,7 +22,6 @@
     <link rel="stylesheet" type="text/css" href="estilos.css">
   </head>
   <body>
-
     <ul class="indice">
       <li class="indice-item"><span data-tooltip="home">01</span><a class="active-bullet" href="#home"></a></li>
       <li class="indice-item"><span data-tooltip="about"></span><a href="#about"></a></li>
@@ -30,30 +29,25 @@
       <li class="indice-item"><span data-tooltip="projects"></span><a href="#projects"></a></li>
       <li class="indice-item"><span data-tooltip="contact"></span><a href="#contact"></a></li>
     </ul>
-
     <div id="side-nav">
-      <div>
+      <div class="side-nav-menu">
         <p>Menu</p>
-        <ul class="side-ul">
-          <li class="side-nav-item"><a href="#home">Home</a></li>
-          <li class="side-nav-item"><a href="#about">About</a></li>
-          <li class="side-nav-item"><a href="#whatido">What i do</a></li>
-          <li class="side-nav-item"><a href="#projects">Projects</a></li>
-          <li class="side-nav-item"><a href="#contact">Contact</a></li>
+        <ul class="side-ul nav">
+          <li class="side-nav-item"><a id="home-btn" href="#home">Home</a></li>
+          <li class="side-nav-item"><a id="about-btn" href="#about">About</a></li>
+          <li class="side-nav-item"><a id="whatido-btn" href="#whatido">What i do</a></li>
+          <li class="side-nav-item"><a id="projects-btn" href="#projects">Projects</a></li>
+          <li class="side-nav-item"><a id="contact-btn" href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div>
+      <div class="side-nav-footer">
         <span>hello@juancbud.com</span>
         <span>+11 358 6 023 603</span>
         <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-dribbble fa-2x" aria-hidden="true"></i></a>
-
       </div>
     </div>
-
-
-
     <div class="contenedor">
       <div id="home">
         <div class="header">
@@ -61,7 +55,7 @@
           <div class="hamburger-menu">
              <div class="bar"></div>
           </div>
-          <ul class="nav-bar">
+          <ul class="nav-bar nav">
             <li class="nav-item"><a class="active" href="#Home">Home</a></li>
             <li class="nav-item"><a href="#about">About</a></li>
             <li class="nav-item"><a href="#whatido">What i do</a></li>
@@ -183,11 +177,13 @@
         <a id="scroll-to-top-btn" href="#home"><i class="fa fa-chevron-up fa-2x" aria-hidden="true"></i></a>
       </footer>
     </div>
+
     <!-- Primero Jquery, despues JavaScript  -->
     <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

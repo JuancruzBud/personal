@@ -17,7 +17,6 @@
 	})
 })();
 
-
 // Cuando hago Click en un a del Side Menu, se cierra
 $('.side-nav-item a').on ('click', function() {
 	$('#side-nav').toggleClass('toggleNav');
@@ -27,4 +26,13 @@ $('.side-nav-item a').on ('click', function() {
 	} else {
 		($('body').css('overflow','visible'))
 	}
+});
+
+// Transiciones de scroll para anchors del body
+$('.nav a').on ('click', function(event) {
+  event.stopPropagation();
+	var targetId = $(this).attr("href").substring(1)
+  var Position = jQuery('[id="'+targetId+'"]').offset().top;
+  jQuery('html, body').animate({ scrollTop: Position }, 600);
+  return false;
 });
