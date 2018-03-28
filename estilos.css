@@ -413,6 +413,12 @@ li.nav-item a.active {
 #home h1 span {
   font-weight: 700;
 }
+h4.hello {
+  margin-bottom: 0px;
+}
+span.name {
+  color: #00AEEF;  
+}
 p.p-student {
   font-family: 'Work Sans', sans-serif;
   font-size: 32px;
