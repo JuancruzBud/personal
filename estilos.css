@@ -484,7 +484,7 @@ p.p-student {
   transition: opacity 200ms ease-in-out;
 }
 .about-photo:hover {
-  opacity: 1;
+  /*opacity: 1;*/
 }
 #about h2 {
   margin: 0;
