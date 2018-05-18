@@ -476,8 +476,8 @@ p.p-student {
   width: 50%;
   height: 640px;
   display: inline-block;
-  background-color: pink;
-  /*background: url("img/") no-repeat center;*/
+  /*background-color: pink;*/
+  background: url("img/me.jpg") no-repeat center;
   background-size:cover;
   border-radius: 4px;
   opacity: 1;
