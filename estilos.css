@@ -530,7 +530,7 @@ p.p-student {
   margin-right: 10px;
 }
 .skill-box:hover {
-  box-shadow: 0 6px 32px rgba(0, 0, 0, .2);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, .2);
 }
 .skill-box p {
   margin: 50px auto;
